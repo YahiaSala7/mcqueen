@@ -63,3 +63,32 @@ button:focus-visible {
     background-color: #f9f9f9;
   }
 }
+:root{
+  --primary-color:#edb901
+}
+
+.MuiDialog-paper{
+  padding: 50px;
+}
+.css-1b37uqu-MuiDialogActions-root>:not(:first-of-type) {
+  margin-left: 0 !important;
+}
+@media (max-width:767px) {
+  .MuiDialog-paper{
+    padding: 0;
+  }
+}
+.swiper-button-prev, .swiper-button-next {
+  color:var(--primary-color) ;
+  width: calc(var(--swiper-navigation-size) / 44 * 410)
+}
+.swiper-button-prev:after, .swiper-button-next:after {
+  content: "\f061";
+  font-family: "Font Awesome 5 Free";
+  background-color: red;
+
+}
+
+.swiper{
+  position: initial;
+}

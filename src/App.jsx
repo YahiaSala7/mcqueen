@@ -1,4 +1,5 @@
 import "./App.css";
+import Gallery from "./Components/Gallery";
 import Landing from "./Components/Landing";
 import Navbar from "./Components/Navbar";
 import About from "./Components/about/About";
@@ -13,6 +14,7 @@ function App() {
       <About />
       <AdsBar />
       <Benefits />
+      <Gallery />
     </>
   );
 }

@@ -18,12 +18,22 @@ import { useState } from "react";
 import { NavLink } from "react-router-dom";
 import { navLinks } from "../Constants/Constants";
 import MenuIcon from "@mui/icons-material/Menu";
+import PhoneIcon from "@mui/icons-material/Phone";
+
 function Navbar() {
   const [active, setActive] = useState("");
 
   const popupState = usePopupState({ variant: "popover", popupId: "demoMenu" });
   return (
-    <AppBar position="static" sx={{ bgcolor: "rgb(0, 0, 0)", p: "20px" }}>
+    <AppBar
+      position="static"
+      sx={{
+        bgcolor: "transparent",
+        p: "50px",
+        position: "absolute",
+        top: 0,
+        zIndex: 1,
+      }}>
       <Toolbar sx={{ justifyContent: "space-between" }}>
         <NavLink
           to="/"
@@ -47,7 +57,10 @@ function Navbar() {
           sx={{ display: { sm: "none", xs: "none", lg: "flex", md: "flex" } }}>
           {navLinks.map((nav) => (
             <Button
-              sx={{ color: active === nav.title ? "white" : "#f9fafbb0" }}
+              sx={{
+                color: active === nav.title ? "#edb901" : "white",
+                "&:hover": { color: "#edb901" },
+              }}
               key={nav.id}
               onClick={() => setActive(nav.title)}
               href={`#${nav.id}`}>
@@ -66,7 +79,10 @@ function Navbar() {
             {navLinks.map((nav) => (
               <MenuItem onClick={popupState.close} key={nav.id}>
                 <Button
-                  sx={{ color: active === nav.title ? "black" : "#121212c4" }}
+                  sx={{
+                    color: active === nav.title ? "#edb901" : "black",
+                    "&:hover": { color: "#edb901" },
+                  }}
                   onClick={() => setActive(nav.title)}
                   href={`#${nav.id}`}>
                   {nav.title}
@@ -75,6 +91,18 @@ function Navbar() {
             ))}
           </Menu>
         </Stack>
+        <Typography
+          sx={{
+            "&:hover": { color: "#edb901" },
+            transition: ".4s",
+            cursor: "pointer",
+            display: { xs: "none", md: "block" },
+          }}>
+          <IconButton>
+            <PhoneIcon sx={{ color: "#edb901" }} />
+          </IconButton>{" "}
+          1-800-1234-567
+        </Typography>
       </Toolbar>
     </AppBar>
   );
