@@ -2,7 +2,7 @@
   padding-top: 140px;
   padding-bottom: 140px;
 }
-@media (max-width: 1039px) {
+@media (max-width: 900px) {
   .section {
     padding-top: 55px;
     padding-bottom: 55px;
