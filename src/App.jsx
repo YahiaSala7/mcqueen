@@ -3,6 +3,7 @@ import Landing from "./Components/Landing";
 import Navbar from "./Components/Navbar";
 import About from "./Components/about/About";
 import AdsBar from "./Components/adsbar/AdsBar";
+import Benefits from "./Components/benefits/Benefits";
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
       <Landing />
       <About />
       <AdsBar />
+      <Benefits />
     </>
   );
 }
