@@ -64,7 +64,8 @@ button:focus-visible {
   }
 }
 :root{
-  --primary-color:#edb901
+  --primary-color:#edb901;
+  --second-color:'#6d6b6b'
 }
 
 .MuiDialog-paper{
@@ -91,4 +92,8 @@ button:focus-visible {
 
 .swiper{
   position: initial;
+}
+.active{
+  color: black !important;
+  background-color: var(--primary-color);
 }
