@@ -7,9 +7,12 @@ import OurTeam from "./Components/OurTeam";
 import Pricing from "./Components/Pricing";
 import Repair from "./Components/Repair";
 import Solutions from "./Components/Solutions";
+import Partner from "./Components/Partner/Partner";
 import About from "./Components/about/About";
 import AdsBar from "./Components/adsbar/AdsBar";
 import Benefits from "./Components/benefits/Benefits";
+import Cv from "./Components/cv/Cv";
+import Testimonials from "./Components/testimonials/Testimonials";
 
 function App() {
   return (
@@ -25,6 +28,10 @@ function App() {
       <Repair />
       <Solutions />
       <FAQ />
+      <Cv />
+      <Partner />
+      <Testimonials />
+      {/* <Gallery /> */}
     </>
   );
 }
