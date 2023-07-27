@@ -8,7 +8,7 @@ import { Box, Stack, Typography } from "@mui/material";
 import { gallery } from "../Constants/Constants";
 function Gallery() {
   return (
-    <Box bgcolor="#f4f4f4" py="150px">
+    <Box bgcolor="#f4f4f4" className="section">
       <Typography
         fontWeight="bold"
         fontSize={{ xs: "18px", sm: "35px" }}
