@@ -13,6 +13,11 @@ import AdsBar from "./Components/adsbar/AdsBar";
 import Benefits from "./Components/benefits/Benefits";
 import Cv from "./Components/cv/Cv";
 import Testimonials from "./Components/testimonials/Testimonials";
+import Counter from "./Components/counter/Counter";
+import VAcancy from "./Components/vacancy/VAcancy";
+import TImeLine from "./Components/timeLIne/TImeLine";
+import Numbers from "./Components/Numbers/Numbers";
+import Contacts from "./Components/Contacts/Contacts";
 
 function App() {
   return (
@@ -23,15 +28,19 @@ function App() {
       <AdsBar />
       <Benefits />
       {/* <Gallery /> */}
+      <Cv />
+      <Partner />
+      <Testimonials />
+      <Counter />
       <Pricing />
       <OurTeam />
       <Repair />
       <Solutions />
       <FAQ />
-      <Cv />
-      <Partner />
-      <Testimonials />
-      {/* <Gallery /> */}
+      <VAcancy />
+      <TImeLine />
+      <Numbers />
+      <Contacts />
     </>
   );
 }
