@@ -11,19 +11,15 @@ const Counter = () => {
   });
   useEffect(() => {
     let a = setInterval(() => {
-      console.log(time);
       if (time.seconds > 0) {
         setTime({ ...time, seconds: time.seconds - 1 });
       } else if (time.minutes > 0) {
         setTime({ ...time, minutes: time.minutes - 1, seconds: 59 });
       } else if (time.hours > 0) {
         setTime({ ...time, hours: time.hours - 1, minutes: 60 });
-      }
-      //   else if (time.day > 0) {
-      //     setTime({ ...time, day: time.day - 1, hours: 24 });
-      //     console.log(time);
-      //   }
-      else {
+      } else if (time.day > 0) {
+        setTime({ ...time, day: time.day - 1, hours: 24 });
+      } else {
         clearInterval(a);
       }
     }, 1000);
