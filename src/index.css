@@ -82,19 +82,48 @@ button:focus-visible {
 .swiper-button-prev,
 .swiper-button-next {
   color: var(--primary-color);
-  width: calc(var(--swiper-navigation-size) / 44 * 410);
-}
-.swiper-button-prev:after,
-.swiper-button-next:after {
-  content: "\f061";
-  font-family: "Font Awesome 5 Free";
-  background-color: red;
-}
+  width: fit-content;
 
+}
+.swiper-button-prev{
+  flex-direction: row-reverse;
+
+}
+.swiper-button-next:after {
+    content: "";
+    border: 10px solid var(--primary-color);
+    border-color: transparent    transparent transparent var(--primary-color);
+}
+.swiper-button-next::before{
+  content: "";
+  width: 15px;
+  height: 5px;
+  background-color: var(--primary-color);
+
+}
+.swiper-button-prev:after{
+    content: "";
+    border: 10px solid var(--primary-color);
+    border-color: transparent  var(--primary-color)  transparent transparent ;
+}
+.swiper-button-prev::before{
+  content: "";
+  width: 15px;
+  height: 5px;
+  background-color: var(--primary-color);
+}
 .swiper {
   position: initial;
 }
-.active{
+.active-card{
   color: black !important;
   background-color: var(--primary-color);
+}
+.css-3dzjca-MuiPaper-root-MuiPopover-paper-MuiMenu-paper{
+  border-radius: 0 !important;
+  width:250px ;
+}
+.css-kk1bwy-MuiButtonBase-root-MuiMenuItem-root:not(:last-child){
+  border-bottom: 1px solid #77777778 !important;
+
 }

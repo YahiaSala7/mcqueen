@@ -27,6 +27,50 @@ export const navLinks = [
     title: "All Blocks",
   },
 ];
+export const subnavLinks = [
+  {
+    id: "One",
+    title: "One",
+  },
+  {
+    id: "Two",
+    title: "Two",
+  },
+  {
+    id: "Three",
+    title: "Three",
+  },
+  {
+    id: "Four",
+    title: "Four",
+  },
+];
+export const allLinks = [
+  {
+    id: "Gallery",
+    title: "Gallery",
+  },
+  {
+    id: "Pricing",
+    title: "Pricing",
+  },
+  {
+    id: "Contacts",
+    title: "Contacts",
+  },
+  {
+    id: "Gallery",
+    title: "Gallery",
+  },
+  {
+    id: "Pricing",
+    title: "Pricing",
+  },
+  {
+    id: "Contacts",
+    title: "Contacts",
+  },
+];
 export const gallery = [
   {
     img: img1,

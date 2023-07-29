@@ -13,15 +13,26 @@ function FAQ() {
     setExpanded(isExpanded ? panel : false);
   };
   return (
-    <Box>
+    <Box py="100px" px={{ lg: "200px", xs: "20px" }}>
+      <Typography
+        fontSize={{
+          xs: "22px",
+          sm: "40px",
+        }}
+        color="black"
+        fontWeight="bold"
+        mb="30px"
+        textAlign="center">
+        Question and Answer
+      </Typography>
       <Accordion
         expanded={expanded === "panel1"}
-        onChange={(isExpanded) => handleExpand(isExpanded, "panel1")}>
+        onChange={(event, isExpanded) => handleExpand(isExpanded, "panel1")}>
         <AccordionSummary
           expandIcon={<ExapndMoreIcon />}
           id="panel1-header"
           aria-controls="panel1-content">
-          <Typography variant="h5">AccordionSummary</Typography>
+          <Typography variant="h5">Question</Typography>
         </AccordionSummary>
         <AccordionDetails>
           <Typography>
@@ -39,7 +50,7 @@ function FAQ() {
           expandIcon={<ExapndMoreIcon />}
           id="panel2-header"
           aria-controls="panel2-content">
-          <Typography variant="h5">AccordionSummary</Typography>
+          <Typography variant="h5">Question</Typography>
         </AccordionSummary>
         <AccordionDetails>
           <Typography>
@@ -57,7 +68,7 @@ function FAQ() {
           expandIcon={<ExapndMoreIcon />}
           id="panel3-header"
           aria-controls="panel3-content">
-          <Typography variant="h5">AccordionSummary</Typography>
+          <Typography variant="h5">Question</Typography>
         </AccordionSummary>
         <AccordionDetails>
           <Typography>

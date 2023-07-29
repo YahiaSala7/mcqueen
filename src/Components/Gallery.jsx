@@ -1,5 +1,5 @@
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Navigation, Pagination, Scrollbar, A11y } from "swiper/modules";
+import { Navigation, Pagination } from "swiper/modules";
 import "swiper/css";
 import "swiper/css";
 import "swiper/css/navigation";
@@ -17,11 +17,30 @@ function Gallery() {
         mb="60px">
         Our Gallery
       </Typography>
-      <Box p="0 250px" position="relative">
+      <Box p="0 50px" position="relative">
         <Swiper
-          modules={[Navigation, Pagination, Scrollbar, A11y]}
+          loop={true}
+          modules={[Navigation, Pagination]}
+          breakpoints={{
+            540: {
+              slidesPerView: 1,
+              spaceBetween: 30,
+            },
+            768: {
+              slidesPerView: 1,
+              spaceBetween: 30,
+            },
+            991: {
+              slidesPerView: 3,
+              spaceBetween: 30,
+            },
+            1200: {
+              slidesPerView: 4,
+              spaceBetween: 20,
+            },
+          }}
           spaceBetween={20}
-          slidesPerView={4}
+          // slidesPerView={1}
           navigation
           scrollbar={{ draggable: true }}
           onSwiper={(swiper) => console.log(swiper)}
@@ -32,7 +51,7 @@ function Gallery() {
                 <img
                   src={item.img}
                   alt={item.id}
-                  style={{ width: "100%", height: "250px" }}
+                  style={{ width: "100%", height: "100%" }}
                 />
               </SwiperSlide>
             </Stack>

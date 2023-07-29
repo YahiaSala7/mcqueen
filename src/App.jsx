@@ -22,16 +22,15 @@ function App() {
       <About />
       <AdsBar />
       <Benefits />
-      {/* <Gallery /> */}
+      <Gallery />
+      <Cv />
+      <Partner />
+      <Testimonials />
       <Pricing />
       <OurTeam />
       <Repair />
       <Solutions />
       <FAQ />
-      <Cv />
-      <Partner />
-      <Testimonials />
-      {/* <Gallery /> */}
     </>
   );
 }

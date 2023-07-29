@@ -39,7 +39,8 @@ const InfoSteps = (Props) => {
           display="flex"
           alignItems="center"
           gap="25px"
-          maxWidth="500px">
+          maxWidth="500px"
+          color="white">
           {infoStep}
         </Typography>
       </Stack>

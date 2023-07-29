@@ -19,7 +19,7 @@ const PricingCard = (Props) => {
       }}>
       <Stack>
         <Stack
-          className={id === 2 ? "active" : ""}
+          className={id === 2 ? "active-card" : ""}
           p="60px"
           alignItems="center">
           <Typography
@@ -39,7 +39,7 @@ const PricingCard = (Props) => {
             fontSize={{ xs: "18px", sm: "22px" }}
             color="black">
             <span
-              className={id === 2 ? "active" : ""}
+              className={id === 2 ? "active-card" : ""}
               style={{ color: "var(--primary-color)" }}>
               ${price}
             </span>

@@ -1,5 +1,6 @@
 import {
   AppBar,
+  Box,
   Button,
   IconButton,
   Menu,
@@ -16,12 +17,14 @@ import {
 } from "material-ui-popup-state/hooks";
 import { useState } from "react";
 import { NavLink } from "react-router-dom";
-import { navLinks } from "../Constants/Constants";
+import { allLinks, navLinks, subnavLinks } from "../Constants/Constants";
 import MenuIcon from "@mui/icons-material/Menu";
 import PhoneIcon from "@mui/icons-material/Phone";
+import { ArrowCircleDown } from "@mui/icons-material";
 
 function Navbar() {
   const [active, setActive] = useState("");
+  const [openSublinks, setOpenSublinks] = useState(false);
 
   const popupState = usePopupState({ variant: "popover", popupId: "demoMenu" });
   return (
@@ -52,9 +55,10 @@ function Navbar() {
         </NavLink>
 
         <Stack
+          position="relative"
           direction="row"
           spacing={2}
-          sx={{ display: { sm: "none", xs: "none", lg: "flex", md: "flex" } }}>
+          sx={{ display: { xs: "none", md: "flex" } }}>
           {navLinks.map((nav) => (
             <Button
               sx={{
@@ -63,20 +67,53 @@ function Navbar() {
               }}
               key={nav.id}
               onClick={() => setActive(nav.title)}
-              href={`#${nav.id}`}>
+              href={`#${nav.id}`}
+              endIcon={
+                nav.id === "All Blocks" ? (
+                  <ArrowCircleDown
+                    onClick={() => setOpenSublinks(!openSublinks)}
+                  />
+                ) : (
+                  ""
+                )
+              }>
               {nav.title}
             </Button>
           ))}
+          <Box
+            display={openSublinks === false ? "none" : "flex"}
+            flexDirection="column"
+            position="absolute"
+            right="0"
+            top="50px"
+            bgcolor="#23262b"
+            borderBottom="1px solid var(--primary-color)"
+            p="10px"
+            width="150px">
+            {subnavLinks.map((nav) => (
+              <Button
+                sx={{
+                  color: active === nav.title ? "#edb901" : "white",
+                  "&:hover": { color: "#edb901" },
+                }}
+                key={nav.id}
+                onClick={() => setActive(nav.title)}
+                href={`#${nav.id}`}>
+                {nav.title}
+              </Button>
+            ))}
+          </Box>
         </Stack>
+
         <Stack
           sx={{
-            display: { sm: "flex", lg: "none", md: "none" },
+            display: { sm: "flex", md: "none" },
           }}>
           <IconButton {...bindTrigger(popupState)}>
-            <MenuIcon sx={{ color: "white" }} />
+            <MenuIcon sx={{ color: "var(--primary-color)" }} />
           </IconButton>
           <Menu {...bindMenu(popupState)}>
-            {navLinks.map((nav) => (
+            {allLinks.map((nav) => (
               <MenuItem onClick={popupState.close} key={nav.id}>
                 <Button
                   sx={{
