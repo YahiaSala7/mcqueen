@@ -31,6 +31,7 @@ function App() {
       <Cv />
       <Partner />
       <Testimonials />
+      <Counter />
       <Pricing />
       <OurTeam />
       <Repair />
