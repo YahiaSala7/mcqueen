@@ -18,6 +18,7 @@ import VAcancy from "./Components/vacancy/VAcancy";
 import TImeLine from "./Components/timeLIne/TImeLine";
 import Numbers from "./Components/Numbers/Numbers";
 import Contacts from "./Components/Contacts/Contacts";
+import Footer from "./Components/Footer/Footer";
 
 function App() {
   return (
@@ -41,6 +42,7 @@ function App() {
       <TImeLine />
       <Numbers />
       <Contacts />
+      <Footer />
     </>
   );
 }
