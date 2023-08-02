@@ -1,5 +1,6 @@
 import { Box, Button, Container, Stack, Typography } from "@mui/material";
 import { repair } from "../assets/imgs";
+import { SectionWrapper } from "./hoc";
 
 function Repair() {
   return (
@@ -48,4 +49,4 @@ function Repair() {
   );
 }
 
-export default Repair;
+export default SectionWrapper(Repair, "featuredproduct");

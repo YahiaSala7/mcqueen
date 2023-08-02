@@ -2,6 +2,7 @@ import { Timer } from "@mui/icons-material";
 import { Box, Container, Typography } from "@mui/material";
 import { useState, useEffect } from "react";
 import BackGround from "../../assets/imgs/counterBackGround.jpg";
+import { SectionWrapper } from "../hoc";
 const Counter = () => {
   const [time, setTime] = useState({
     day: 0,
@@ -271,4 +272,4 @@ const Counter = () => {
   );
 };
 
-export default Counter;
+export default SectionWrapper(Counter, "counters");

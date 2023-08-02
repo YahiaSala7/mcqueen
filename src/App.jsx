@@ -28,7 +28,7 @@ function App() {
       <About />
       <AdsBar />
       <Benefits />
-      {/* <Gallery /> */}
+      <Gallery />
       <Cv />
       <Partner />
       <Testimonials />

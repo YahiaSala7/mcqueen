@@ -3,6 +3,7 @@ import React from "react";
 import testi1 from "../../assets/imgs/testimonials1.jpg";
 import testi2 from "../../assets/imgs/testimonials2.jpg";
 import testi3 from "../../assets/imgs/testimonials3.jpg";
+import { SectionWrapper } from "../hoc";
 const Testimonials = () => {
   return (
     <Box className="section">
@@ -241,4 +242,4 @@ const Testimonials = () => {
   );
 };
 
-export default Testimonials;
+export default SectionWrapper(Testimonials, "testimonials");

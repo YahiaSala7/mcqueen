@@ -7,6 +7,7 @@ import {
   Typography,
 } from "@mui/material";
 import { infoPricing } from "../Constants/Constants";
+import { SectionWrapper } from "./hoc";
 
 const PricingCard = (Props) => {
   const { infoPricing } = Props;
@@ -102,4 +103,4 @@ function Pricing() {
   );
 }
 
-export default Pricing;
+export default SectionWrapper(Pricing, "pricing");

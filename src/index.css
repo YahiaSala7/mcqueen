@@ -1,19 +1,22 @@
 :root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
-
   color-scheme: light dark;
   color: rgba(0, 0, 0, 0.9);
   background-color: white;
-
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
 }
-
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat',sans-serif !important;
+  scroll-behavior: smooth;
+}
 a {
   font-weight: 500;
   color: #646cff;
@@ -25,6 +28,7 @@ a:hover {
 
 body {
   margin: 0;
+  scroll-behavior: smooth;
 }
 
 h1 {
@@ -123,7 +127,24 @@ button:focus-visible {
   border-radius: 0 !important;
   width:250px ;
 }
+.css-kk1bwy-MuiButtonBase-root-MuiMenuItem-root {
+  padding: 2px !important;
+}
 .css-kk1bwy-MuiButtonBase-root-MuiMenuItem-root:not(:last-child){
   border-bottom: 1px solid #77777778 !important;
 
+}
+.all-blocks:hover .ul-all-blocks{
+  display: flex;
+}
+.all-blocks .ul-all-blocks::before
+{
+    content: "";
+    width: 100%;
+    height: 30px;
+    background-color: transparent;
+    position: absolute;
+    left: 0;
+    top: -20px;
+    
 }

@@ -1,6 +1,7 @@
 import { Box, Container, Typography } from "@mui/material";
 
 import FormikContainer from "./FormikContainer";
+import { SectionWrapper } from "../hoc";
 
 const Contacts = () => {
   return (
@@ -26,4 +27,4 @@ const Contacts = () => {
   );
 };
 
-export default Contacts;
+export default SectionWrapper(Contacts, "contacts");

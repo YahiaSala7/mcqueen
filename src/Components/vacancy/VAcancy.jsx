@@ -1,12 +1,13 @@
 import { Box, Container, Stack, Typography } from "@mui/material";
 import React from "react";
 import vacancyimage from "../../assets/imgs/vacancyImage.jpg";
+import { SectionWrapper } from "../hoc";
 const VAcancy = () => {
   return (
     <Box className="section">
       <Container>
         <Stack
-          justifyContent={"space-between"}
+          justifyContent={"center"}
           gap={"30px"}
           sx={{
             gap: { md: "30px", xs: "5px" },
@@ -179,4 +180,4 @@ const VAcancy = () => {
   );
 };
 
-export default VAcancy;
+export default SectionWrapper(VAcancy, "vacancy");

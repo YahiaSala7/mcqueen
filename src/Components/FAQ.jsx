@@ -7,6 +7,7 @@ import {
 } from "@mui/material";
 import { useState } from "react";
 import ExapndMoreIcon from "@mui/icons-material/ExpandMore";
+import { SectionWrapper } from "./hoc";
 function FAQ() {
   const [expanded, setExpanded] = useState(false);
   const handleExpand = (isExpanded, panel) => {
@@ -82,4 +83,4 @@ function FAQ() {
     </Box>
   );
 }
-export default FAQ;
+export default SectionWrapper(FAQ, "faq");

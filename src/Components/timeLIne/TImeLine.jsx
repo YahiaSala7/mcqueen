@@ -1,6 +1,7 @@
 import React from "react";
 import { Box, Container, Stack, Typography } from "@mui/material";
 import KeyboardDoubleArrowRightIcon from "@mui/icons-material/KeyboardDoubleArrowRight";
+import { SectionWrapper } from "../hoc";
 const TImeLine = () => {
   return (
     <Box className="section">
@@ -215,4 +216,4 @@ const TImeLine = () => {
   );
 };
 
-export default TImeLine;
+export default SectionWrapper(TImeLine, "timeline");

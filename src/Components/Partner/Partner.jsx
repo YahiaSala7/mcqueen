@@ -3,6 +3,7 @@ import React from "react";
 import partner1 from "../../assets/imgs/partners1.png";
 import partner2 from "../../assets/imgs/partners2.png";
 import partner3 from "../../assets/imgs/partners3.png";
+import { SectionWrapper } from "../hoc";
 const Partner = () => {
   return (
     <Stack className="section">
@@ -203,4 +204,4 @@ const Partner = () => {
   );
 };
 
-export default Partner;
+export default SectionWrapper(Partner, "sponsors");

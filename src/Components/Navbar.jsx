@@ -67,41 +67,49 @@ function Navbar() {
               }}
               key={nav.id}
               onClick={() => setActive(nav.title)}
-              href={`#${nav.id}`}
-              endIcon={
-                nav.id === "All Blocks" ? (
-                  <ArrowCircleDown
-                    onClick={() => setOpenSublinks(!openSublinks)}
-                  />
-                ) : (
-                  ""
-                )
-              }>
+              href={`#${nav.id}`}>
               {nav.title}
             </Button>
           ))}
-          <Box
-            display={openSublinks === false ? "none" : "flex"}
-            flexDirection="column"
-            position="absolute"
-            right="0"
-            top="50px"
-            bgcolor="#23262b"
-            borderBottom="1px solid var(--primary-color)"
-            p="10px"
-            width="150px">
-            {subnavLinks.map((nav) => (
-              <Button
-                sx={{
-                  color: active === nav.title ? "#edb901" : "white",
-                  "&:hover": { color: "#edb901" },
-                }}
-                key={nav.id}
-                onClick={() => setActive(nav.title)}
-                href={`#${nav.id}`}>
-                {nav.title}
-              </Button>
-            ))}
+
+          <Box className="all-blocks" position="relative">
+            <Button
+              sx={{
+                color: active === "All Blocks" ? "#edb901" : "white",
+                "&:hover": { color: "#edb901" },
+              }}
+              onClick={() => setActive("All Blocks")}
+              href={""}
+              variant="text"
+              className="button-all-blocks">
+              All Blocks
+            </Button>
+            <Box
+              position="absolute"
+              right="0"
+              top="50px"
+              bgcolor="#23262b"
+              border="1px solid var(--primary-color)"
+              p="10px"
+              flexDirection="column"
+              width="150px"
+              display="none"
+              className="ul-all-blocks">
+              {subnavLinks.map((nav) => (
+                <Button
+                  sx={{
+                    color: active === nav.title ? "#edb901" : "white",
+                    "&:hover": { color: "#edb901" },
+                    textAlign: "center",
+                    fontSize: "12px",
+                  }}
+                  key={nav.id}
+                  onClick={() => setActive(nav.title)}
+                  href={`#${nav.id}`}>
+                  {nav.title}
+                </Button>
+              ))}
+            </Box>
           </Box>
         </Stack>
 

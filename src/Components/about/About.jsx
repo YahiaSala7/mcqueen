@@ -1,5 +1,6 @@
 import { Box, Container, Stack, Typography } from "@mui/material";
 import couches from "../../assets/imgs/couches-about.jpg";
+import { SectionWrapper } from "../hoc";
 const About = () => {
   return (
     <Stack
@@ -56,4 +57,4 @@ const About = () => {
   );
 };
 
-export default About;
+export default SectionWrapper(About, "about");

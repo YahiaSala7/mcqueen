@@ -11,64 +11,140 @@ import {
 
 export const navLinks = [
   {
-    id: "Gallery",
+    id: "gallery",
     title: "Gallery",
   },
   {
-    id: "Pricing",
+    id: "pricing",
     title: "Pricing",
   },
   {
-    id: "Contacts",
+    id: "contacts",
     title: "Contacts",
-  },
-  {
-    id: "All Blocks",
-    title: "All Blocks",
   },
 ];
 export const subnavLinks = [
   {
-    id: "One",
-    title: "One",
+    id: "about",
+    title: "About",
   },
   {
-    id: "Two",
-    title: "Two",
+    id: "adsbar",
+    title: "Ads bar",
   },
   {
-    id: "Three",
-    title: "Three",
+    id: "benefits",
+    title: "Benefits",
   },
   {
-    id: "Four",
-    title: "Four",
+    id: "cv",
+    title: "CV",
+  },
+  {
+    id: "sponsors",
+    title: "Sponsors",
+  },
+  {
+    id: "testimonials",
+    title: "Testimonials",
+  },
+  {
+    id: "counters",
+    title: "Counters",
+  },
+  {
+    id: "pricing",
+    title: "Pricing",
+  },
+  {
+    id: "team",
+    title: "Team",
+  },
+  {
+    id: "featuredproduct",
+    title: "Featured Product",
+  },
+  {
+    id: "3stepssolution",
+    title: "3 Steps Solution",
+  },
+  {
+    id: "faq",
+    title: "F.A.Q.",
+  },
+  {
+    id: "vacancy",
+    title: "Vacancy",
+  },
+  {
+    id: "timeline",
+    title: "Timeline",
   },
 ];
 export const allLinks = [
   {
-    id: "Gallery",
+    id: "gallery",
     title: "Gallery",
   },
   {
-    id: "Pricing",
+    id: "pricing",
     title: "Pricing",
   },
   {
-    id: "Contacts",
+    id: "contacts",
     title: "Contacts",
   },
   {
-    id: "Gallery",
-    title: "Gallery",
+    id: "about",
+    title: "About",
   },
   {
-    id: "Pricing",
-    title: "Pricing",
+    id: "adsbar",
+    title: "Ads bar",
   },
   {
-    id: "Contacts",
-    title: "Contacts",
+    id: "benefits",
+    title: "Benefits",
+  },
+  {
+    id: "cv",
+    title: "CV",
+  },
+  {
+    id: "sponsors",
+    title: "Sponsors",
+  },
+  {
+    id: "testimonials",
+    title: "Testimonials",
+  },
+  {
+    id: "counters",
+    title: "Counters",
+  },
+  {
+    id: "team",
+    title: "Team",
+  },
+  {
+    id: "featuredproduct",
+    title: "Featured Product",
+  },
+  {
+    id: "3stepssolution",
+    title: "3 Steps Solution",
+  },
+  {
+    id: "faq",
+    title: "F.A.Q.",
+  },
+  {
+    id: "vacancy",
+    title: "Vacancy",
+  },
+  {
+    id: "timeline",
+    title: "Timeline",
   },
 ];
 export const gallery = [

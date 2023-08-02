@@ -1,6 +1,7 @@
 import { Box, Container, Stack, Typography } from "@mui/material";
 import { solutions } from "../assets/imgs";
 import { solutionsSection } from "../Constants/Constants";
+import { SectionWrapper } from "./hoc";
 const InfoSteps = (Props) => {
   const { info } = Props;
   const { infoStep, number } = info;
@@ -58,7 +59,7 @@ function Solutions() {
         backgroundSize: "cover",
         backgroundPosition: "center center",
         backgroundRepeat: "no-repeat",
-        height: { xs: "100vh", sm: "50vh" },
+        height: { sm: "70vh" },
       }}>
       <Container
         sx={{ height: "100%", display: "flex", flexDirection: "column" }}>
@@ -90,4 +91,4 @@ function Solutions() {
   );
 }
 
-export default Solutions;
+export default SectionWrapper(Solutions, "3stepssolution");

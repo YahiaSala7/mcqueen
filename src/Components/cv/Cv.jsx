@@ -1,6 +1,7 @@
 import { Box, Container, Stack, Typography } from "@mui/material";
 import React from "react";
 import cvImage from "../../assets/imgs/cvSection.jpg";
+import { SectionWrapper } from "../hoc";
 const Cv = () => {
   return (
     <Box className="section">
@@ -243,4 +244,4 @@ const Cv = () => {
   );
 };
 
-export default Cv;
+export default SectionWrapper(Cv, "cv");

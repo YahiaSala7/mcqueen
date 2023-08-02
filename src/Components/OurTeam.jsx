@@ -1,5 +1,6 @@
 import { Box, Stack, Typography, Grid, Container } from "@mui/material";
 import { ourTeam } from "../Constants/Constants";
+import { SectionWrapper } from "./hoc";
 
 const TeamMember = (Props) => {
   const { team } = Props;
@@ -62,4 +63,4 @@ function OurTeam() {
   );
 }
 
-export default OurTeam;
+export default SectionWrapper(OurTeam, "team");

@@ -1,5 +1,6 @@
 import { Container, Stack, Box, Button } from "@mui/material";
 import adsImgae from "../../assets/imgs/AdsSection.jpg";
+import { SectionWrapper } from "../hoc";
 const AdsBar = () => {
   return (
     <Stack
@@ -117,4 +118,4 @@ const AdsBar = () => {
   );
 };
 
-export default AdsBar;
+export default SectionWrapper(AdsBar, "adsbar");

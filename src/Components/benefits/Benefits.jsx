@@ -2,6 +2,7 @@ import { Container, Stack, Box, Typography } from "@mui/material";
 import benefit1 from "../../assets/imgs/Benefit1.png";
 import benefit2 from "../../assets/imgs/Benefit2.png";
 import benefit3 from "../../assets/imgs/Benefit3.png";
+import { SectionWrapper } from "../hoc";
 const Benefits = () => {
   return (
     <Box className="section" sx={{ backgroundColor: "white" }}>
@@ -206,4 +207,4 @@ const Benefits = () => {
   );
 };
 
-export default Benefits;
+export default SectionWrapper(Benefits, "benefits");
