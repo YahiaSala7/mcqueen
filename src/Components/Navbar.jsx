@@ -49,7 +49,7 @@ function Navbar() {
             <img src={logo} alt="logo" />
             <Typography
               sx={{ color: "white", fontSize: { xs: "22px", sm: "24px" } }}>
-              Mcqeen
+              McQueen
             </Typography>
           </Stack>
         </NavLink>

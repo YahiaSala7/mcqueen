@@ -72,7 +72,7 @@ const Footer = () => {
                   fontFamily: " 'Montserrat', sans-serif",
                 }}
                 href="#">
-                Carioti
+                McQueen
               </Link>
             </Box>
 
@@ -86,7 +86,7 @@ const Footer = () => {
                 lineHeight: 1.5,
                 letterSpacing: "0px",
               }}>
-              Carioti has been providing reliable maintenance services for
+              McQueen has been providing reliable maintenance services for
               vehicles of all sizes and manufacturers since 2002.
             </Box>
           </Box>
